@@ -1,0 +1,52 @@
+body {
+  background-color: rgba(242,145,197,0.91);
+  background: filter-gradient(#f291c5, #f47ba7, vertical);
+  background: background-image(linear-gradient(top, rgba(242,145,197,0.91) 0%, rgba(244,123,167,1) 57%, rgba(245,110,149,1) 91%));
+  // Black Rose
+  background: #f4c4f3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #fc67fa, #f4c4f3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #fc67fa, #f4c4f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+// LALALA
+  background: #D66D75;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #E29587, #D66D75);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #E29587, #D66D75); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  // Roseanna
+  background: #FFAFBD;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+section.section.video {
+  background-color: #fafafa;
+  height: 100%;
+  video {
+    height: 100%;
+  }
+}
+.subtitle-break { margin-bottom: 12px; }
+.landingButton { margin: 0 10px 0 10px; }
+
+@media screen and (min-width: 769px), print {
+  .hero.is-large .hero-body {
+    padding-bottom: 21rem;
+    padding-top: 15rem;
+  }
+}
+.custom-navbar-menu {
+  flex-grow: 1;
+  flex-shrink: 0;
+  align-items: stretch;
+  display: inline-block;
+}
+
+.navbar-end {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+.navbar, .navbar-menu, .navbar-start, .navbar-end {
+    align-items: stretch;
+    display: flex;
+}
+
+.navbar > .container.custom-container {
+    display: flex;
+}

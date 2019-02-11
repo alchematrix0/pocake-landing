@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
+    <title>POCake - self serve Points of Sale</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <section class="hero is-fullheight">
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container custom-container">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <img src="./assets/pocake-logo.png" alt="POCake Logo">
+              </a>
+              <!-- <span class="navbar-burger burger" data-target="navbarMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span> -->
+            </div>
+            <div id="navbarMenu" class="custom-navbar-menu">
+              <div class="navbar-end">
+                <!-- <a class="navbar-item">
+                  Home
+                </a>
+                <a class="navbar-item">
+                  Who it's for
+                </a>
+                <a class="navbar-item">
+                  Getting Started
+                </a> -->
+                <span class="navbar-item">
+                  <a href="https://pocake.alchematrix.net" target="_blank" class="button is-info is-inverted">
+                    <span>Demo</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- HERO BODY LANDING CONTENT -->
+
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-8-desktop is-offset-2-desktop">
+              <h1 class="title is-1 is-spaced">
+                What a Piece of Cake! 🍰
+              </h1>
+              <h2 class="subtitle is-4 is-spaced">
+                The <strong>self-serve Point of Sale</strong> that saves you <strong>time</strong> and <strong>money</strong> with <u>no upfront costs</u>
+              </h2>
+              <button onclick="scrollPageTo('video')" class="is-large button">
+                But how!?
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- VIDEO SECTION -->
+
+    <section class="section video" id="video">
+      <div class="container">
+        <div class="columns is-vcentered is-multiline is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <h4 class="title is-3-desktop is-4" style="margin-bottom: 40px">
+                Customers place their order and pay directly from their phone, all from your existing website or social profile!
+              </h4>
+              <p class="subtitle is-5-desktop is-6 is-spaced" style="max-width: 85%;">
+                Staff are alerted each time an order comes in and customers receive a notification when their order is ready.
+              </p>
+              <p class="subtitle is-5-desktop is-6 is-spaced">
+                Accepts Apple Pay, Google Pay and credit cards out of the box.
+              </p>
+              <p class="title is-5">Ok that's cool. <a onclick="scrollPageTo('features')">Why do I want this?</a></p>
+            </div>
+          </div>
+          <div class="column is-4">
+            <video id="videoPlayer" muted controls preload="auto">
+              <source src="./assets/mobile-order-add.mov">
+              <p>Your browser doesn't support HTML5 video. Here is a <a href="youtube.com">link to the video</a> instead.</p>
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN SECTION -->
+
+    <section class="section is-large" id="features" style="padding: 6rem 1.5rem">
+      <div class="container">
+        <div class="columns is-centered is-multiline">
+          <div class="column is-one-quarter">
+            <div class="content">
+              <div class="box">
+                <p class="title is-5" style="margin-bottom: 2em;">Save money</p>
+                <p class="subtitle">Slash overhead by decreasing the need for front of house staff who only manage PoS terminals.</p>
+                <p class="subtitle">Deliver consistently wonderful guest experiences without adding to payroll expenses.</p>
+                <p class="subtitle">Give marketing a boost by seamlessly integrating PoCake with your existing campaigns.</p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="content">
+              <div class="box">
+                <p class="title is-5" style="margin-bottom: 2em;">Fatten the bottom line</p>
+                <p class="subtitle">Process more daily transactions. Picture your existing volume on steroids!</p>
+                <p class="subtitle">Stop losing customers to long wait times and stand out from the crowd.</p>
+                <p class="subtitle">Let your guests enjoy your space without standing around in line (hint: boost retail sales!)</p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="content">
+              <div class="box">
+                <p class="title is-5" style="margin-bottom: 2em;">$0 startup cost</p>
+                <p class="subtitle">No expensive infrastucture to purchase, install and maintain.</p>
+                <p class="subtitle">Leverages your customers phone and works alongside any existing PoS system; all you'll need is a web browser.</p>
+                <p class="subtitle">Every account comes with a free month so you can see how much you save with PoCake before you buy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section is-fullheight" id="contact" style="padding: 6rem 1.5rem">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column is-9 is-offset-2">
+            <h2 class="title is-4 is-size-3-desktop">Pricing as simple as our ordering system</h2>
+            <h2 class="title is-2 is-inline">$45/month</h2> <small>first month free</small>
+          </div>
+        </div>
+        <div class="columns is-vcentered">
+          <div class="column is-4 is-offset-2">
+            <h2 class="title is-4">
+              <span class="shadow is-danger"><strong>Schedule</strong> a free demo today</span>
+            </h2>
+          </div>
+
+          <div class="column is-4">
+            <form class="newsletter-form" action="https://formspree.io/alchematrix0@gmail.com" method="POST" accept-charset="utf-8">
+              <input type="hidden" name="_next" value="https://pocake.netlify.com/thanks">
+              <div class="field">
+                <p class="label" for="name">Contact</p>
+                <div class="control">
+                  <input class="input" type="text" name="name" id="name" placeholder="e.g. Alex Smith at Wendy's">
+                </div>
+              </div>
+              <div class="field">
+                <p class="label" for="email">Email</p>
+                <div class="control">
+                  <input class="input" type="email" name="_replyto" id="email" placeholder="e.g. alexsmith@gmail.com" required="">
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <button class="button is-info" id="submit">Let's go!</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="lib/main.js"></script>
+  </body>
+</html>
