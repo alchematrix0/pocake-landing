@@ -7,4 +7,5 @@ document.addEventListener('DOMContentLoaded', () => {
       let video = document.getElementById('videoPlayer')
       video.play()
     }
-}
+  }
+})
