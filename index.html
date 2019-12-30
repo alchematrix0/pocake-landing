@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="./assets/favicon.ico" />
     <title>PoCake - self serve online PoS</title>
     <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="lib/main.js"></script>
   </head>
   <body>
     <section class="hero is-fullheight">
@@ -95,7 +96,7 @@
 
     <!-- MAIN SECTION -->
 
-    <section class="section is-large" id="features" style="padding: 6rem 1.5rem">
+    <section class="section hero is-fullheight" id="features" style="padding: 20vh 1.5rem">
       <div class="container">
         <div class="columns is-centered is-multiline">
           <div class="column is-one-quarter">
@@ -132,9 +133,9 @@
       </div>
     </section>
 
-    <div class="section is-fullheight" id="contact" style="padding: 6rem 1.5rem">
+    <div class="section hero is-fullheight" id="contact" style="padding: 6rem 1.5rem">
       <div class="container">
-        <div class="columns is-vcentered">
+        <div class="columns is-vcentered" style="margin-bottom: 4rem;">
           <div class="column is-9 is-offset-2">
             <h2 class="title is-4 is-size-3-desktop">Pricing as simple as our ordering system</h2>
             <h2 class="title is-2 is-inline">$45/month</h2> <small> first month free</small>
@@ -148,8 +149,7 @@
           </div>
 
           <div class="column is-4">
-            <form class="newsletter-form" action="https://formspree.io/alchematrix0@gmail.com" method="POST" accept-charset="utf-8">
-              <input type="hidden" name="_next" value="https://pocake.netlify.com/thanks">
+            <form netlify name="PoCake_Contact" class="newsletter-form" action="/thanks" method="POST" accept-charset="utf-8">
               <div class="field">
                 <p class="label" for="name">Contact</p>
                 <div class="control">
@@ -172,6 +172,5 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="lib/main.js"></script>
   </body>
 </html>
