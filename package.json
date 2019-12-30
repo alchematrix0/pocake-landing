@@ -26,10 +26,12 @@
     "css-build": "node-sass _sass/main.scss css/main.css",
     "css-postcss": "postcss --use autoprefixer --output css/main.css css/main.css",
     "css-watch": "npm run css-build -- --watch",
+    "netlify-build": "mkdir build && cp -r css ./build/css && cp -r lib build/lib && cp -r assets build/assets && cp *.html ./build/",
     "create-build": "cp -r css ./build/css && cp -r lib build/lib && cp -r assets build/assets && cp *.html ./build/",
     "deploy": "npm run css-deploy && npm run js-build && npm run create-build",
     "js-build": "babel _javascript --out-dir lib",
     "js-watch": "npm run js-build -- --watch",
-    "start": "npm run css-watch | npm run js-watch"
+    "start": "npm run css-watch | npm run js-watch",
+    "netlify": "npm run css-deploy && npm run js-build && npm run netlify-build"
   }
 }
